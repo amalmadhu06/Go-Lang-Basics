@@ -14,5 +14,6 @@ func main() {
 	for i, j := range score {
 		fmt.Printf("Score of %v is %v \n", i, j)
 	}
+	fmt.Println(score)
 
 }

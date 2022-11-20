@@ -3,11 +3,11 @@ package main
 import "fmt"
 
 func main() {
-	// var arr1 [100]int
-	// var size1 int
-	arr1, size1 := getArrayy()
+	var a1 [100]int
+	var s1 int
+	a1, s1 = getArrayy()
 
-	displayArray(arr1, size1)
+	displayArray(a1, s1)
 
 }
 
