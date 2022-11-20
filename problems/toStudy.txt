@@ -1,0 +1,9 @@
+
+
+
+1. Datatypes
+2. Type
+3. Array, slice
+4. fmt, print methods, scan methods
+5. Inbuilt methods
+ 
