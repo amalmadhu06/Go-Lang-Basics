@@ -11,13 +11,13 @@ import (
 
 func main() {
 
-	// before, after, found := strings.Cut("amal", "a")
-	// fmt.Print(before, " , ", after, " , ", found)
+	before, after, found := strings.Cut("amal", "a")
+	fmt.Print(before, " , ", after, " , ", found)
 
-	// before1, after1, found1 := strings.Cut("strings", "a")
-	// fmt.Print(before1, " , ", after1, " , ", found1)
-
-	before1, after1, found1 := strings.Cut("strangs", "a")
+	before1, after1, found1 := strings.Cut("strings", "a")
 	fmt.Print(before1, " , ", after1, " , ", found1)
+
+	before2, after2, found2 := strings.Cut("strangs", "a")
+	fmt.Print(before2, " , ", after2, " , ", found2)
 
 }
