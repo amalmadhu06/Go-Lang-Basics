@@ -5,11 +5,10 @@ import (
 	"math"
 )
 
-//shape interface
-
+// shape interface
 type shape interface {
 	area() float64    //method sets
-	circumf() float64 //method sets	
+	circumf() float64 //method sets
 }
 
 type square struct { //creating a struct
@@ -23,12 +22,10 @@ type circle struct { //creating a struct
 //struct method for square
 
 func (s square) area() float64 {
-
 	return s.length * s.length
 }
 
 func (s square) circumf() float64 {
-
 	return s.length * 4
 }
 
@@ -49,7 +46,6 @@ func printShapeInfo(s shape) {
 
 // main function
 func main() {
-
 	shapes := []shape{
 		square{length: 10},
 		circle{radius: 20},
