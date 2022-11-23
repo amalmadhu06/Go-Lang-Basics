@@ -11,11 +11,9 @@ func main() {
 	time.Sleep(time.Second * 1)
 	go printerFunc("second ----2")
 	time.Sleep(time.Second * 1)
-	go printerFunc("third ------3")
-	
+	printerFunc("third ------3")
+
 	time.Sleep(time.Second * 5)
-
-
 
 }
 
