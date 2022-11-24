@@ -2,21 +2,24 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
 
+func main() {
 
-func main(){
+	fmt.Println("test file")
+	message := `
+	**************************
+	*    BUY NOW, SAVE 10%   *
+	**************************
+	`
+	CleanupMessage(message)
+}
 
-	var salary int
-	status := false
+func CleanupMessage(oldMsg string) string {
 
-	salary  = 500000
-	status = true
-
-	fmt.Scan(&salary)
-
-	if status == true {
-
-	}
-	
+	res := strings.ReplaceAll(oldMsg, "*", "")
+	res = strings.TrimSpace(res)
+	fmt.Println(res)
+	return res
 }
