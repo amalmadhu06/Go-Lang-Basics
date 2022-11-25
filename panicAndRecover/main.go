@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	for i := 0; i <= 11; i++ {
-		if i == 9 {
+		if i == 7 {
 			defer func() {
 
 				if r := recover(); r != nil {
