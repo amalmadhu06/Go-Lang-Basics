@@ -10,13 +10,11 @@ func main() {
 
 func panicCreator() {
 	fmt.Println("Panic creator started")
-// panic("created a panic")
+	panic("created a panic")
 }
 
 func tryToRecover() {
 	if err := recover(); err != nil {
 		fmt.Println("recovered from error")
-	} else {
-		fmt.Println("Exit code : 0")
 	}
 }
