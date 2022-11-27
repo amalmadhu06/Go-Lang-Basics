@@ -9,6 +9,7 @@ func multiValueReceiver(channel1 chan int) { //function with receives values fro
 	value := 0
 	for value >= 0 {
 		value = <-channel1
+		time.Sleep(time.Millisecond * 500)
 		fmt.Println(value)
 	}
 }
@@ -22,6 +23,6 @@ func main() {
 		sampleChannel <- value
 	}
 
-	time.Sleep(time.Millisecond * 500)        //setting timeout
+	time.Sleep(time.Millisecond * 500)        //for pausing main before ending
 	fmt.Println("Main function completed   ") //
 }
