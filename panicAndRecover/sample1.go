@@ -14,7 +14,7 @@ func main() {
 		time.Sleep(time.Millisecond * 500)
 	}
 	panic("sleeping over")
-	fmt.Println("after panic")
+	// fmt.Println("after panic")
 
 }
 
