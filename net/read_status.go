@@ -12,6 +12,7 @@ func main() {
 	fmt.Println()                                             //
 	fmt.Fprintf(connection, "GET / HTTP/1.0\r\n\r\n")         //sends string over the connection
 	status, _ := bufio.NewReader(connection).ReadString('\n') //first response line
-	fmt.Println(status)                                       //
+	fmt.Println(status)
+	fmt.Println(connection) //
 
 }
